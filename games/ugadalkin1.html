@@ -1,0 +1,42 @@
+<!--Тимур Муратшин-->
+<meta charset="utf-8">
+<script>
+	var number = Math.floor(Math.random() * 100) + 1;
+	var flag = 1;
+		
+/*	while (user_number != number){
+		var user_number = prompt ('Какое число загадано? (от 1 до 100)', 50);
+		
+		if ((user_number > 0) && (user_number <= 100)){
+			if (user_number == number){
+			alert ('Вы угадали!!!');
+			} else if (user_number > number) {
+				alert ('Загаданное число меньше');
+			} else {
+				alert ('Загаданное число больше');
+			}
+		} else {
+			alert ('Неверный ввод');
+		}
+	}*/
+while (user_number != number)
+{
+		var user_number = prompt ('Какое число загадано? (от 1 до 100)', 50);
+		flag=1;
+		if ((user_number > 0) && (user_number <= 100))
+		{
+			if (user_number == number){
+			alert ('Вы угадали!!!');
+			document.write ('Победил игрок '+flag);
+			} else if (user_number > number) {
+				alert ('Загаданное число меньше');
+				flag=flag++;
+			} else {
+				alert ('Загаданное число больше');
+			}
+		} else {
+			alert ('Неверный ввод');
+		}
+}
+	
+</script>

@@ -1,0 +1,26 @@
+<!--Тимур Муратшин-->
+<meta charset="utf-8">
+<script>
+var year = 1;
+
+	do //цикл проверки ввода
+	{
+	var vklad = parseInt(prompt('Введите начальную сумму вклада в рублях',0));
+	var procent = parseInt(prompt('Введите процент по вкладу',0));
+		if (vklad<=0 || procent<=0)
+		{
+		alert ('Введенные данные неверны. Попробуйте еще раз.');
+		}
+	}
+	while (vklad<=0 || procent<=0)
+
+var raschet=(1 + Math.pow((procent/100),year)); //общая формула
+	
+	while (year<=5)
+	{
+		vklad = vklad * raschet; //иначе вот тут, с общей формулой, считает неправильно.
+		document.write("Состояние вклада за "+year+" год"+" ");
+		document.write(vklad.toFixed(0)+" руб."+"<br>");
+		year++;
+	}
+</script>

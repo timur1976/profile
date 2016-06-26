@@ -1,0 +1,56 @@
+<meta charset="utf-8">
+<script>
+var itog= "Вам удалось ответить ";
+var plus = "правильно ";
+var minus = " и неправильно ";
+var raz = "раз."
+
+var otvet11 = "ножницы"; var otvet12 = "Ножницы";
+var otvet21 = "поезд"; var otvet22 = "Поезд";
+var otvet31 = "владивосток"; var otvet32 = "Владивосток";
+var otvet41 = "кондуктор"; var otvet42 = "Кондуктор";
+
+cool=0;
+poor=0;
+var text=prompt('Загадка. Два конца, два кольца, посередине гвоздик. Что это?',0);
+if (text == otvet11 || text == otvet12) {
+	cool=cool+1;
+	alert('Вы угадали!');
+	}else {
+	alert ('Вы ошиблись!');
+	poor=poor+1;
+	};
+
+var text=prompt('Он по рельсам быстро мчал, шпалы все пересчитал. Что это?',0);
+if (text == otvet21 || text == otvet22) {
+	cool=cool+1;
+	alert('Вы угадали второй раз!');
+	}else {
+	alert ('Жаль, но Вы ошиблись!');
+	poor=poor+1;
+	};
+
+var text=prompt('В каком городе спрятались мужское имя и сторона света?',0);
+if (text == otvet31 || text == otvet32) {
+	cool=cool+1;
+	alert('Вам везет!');
+	}else {
+	poor=poor+1;
+	alert ('Ошибка!');
+	};
+
+var text=prompt('Какая женщина сначала трется около тебя, а потом требует деньги?',0);	
+if (text == otvet41 || text == otvet42) {
+	cool=cool+1;
+	alert('Вы просто молодец!');
+	}else {
+	poor=poor+1;
+	alert ('Не повезло!');
+	};
+
+alert (itog+plus+cool+minus+poor+raz);	
+
+
+
+
+</script>
